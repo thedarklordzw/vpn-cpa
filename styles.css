@@ -1,0 +1,143 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+
+  font-size: 2rem;
+
+  max-width: 80vw;
+  margin: 0 auto;
+
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Barlow', sans-serif;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 
+
+9. Remove default styling from links
+ */
+
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  transition: all 300ms ease-in;
+}
+
+a:hover,
+a:active {
+  color: red;
+}
+
+.header,
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  margin-bottom: 10rem;
+  justify-content: space-between;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+.nav__list {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.heading-1 {
+  font-family: 'Rajdhani', sans-serif;
+  margin-bottom: 3rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  background-color: #ff8800;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+}
